@@ -8,5 +8,14 @@ namespace Modelo
 {
     public class TipoCuenta
     {
+        private int tipoCuentaId;
+        private string tipoCuentaDescripcion = "";
+
+        public TipoCuenta() { }
+        public TipoCuenta(int tipoCuentaId, string tipoCuentaDescripcion) {
+            this.tipoCuentaId = tipoCuentaId;
+            this.tipoCuentaDescripcion = tipoCuentaDescripcion;
+        }
+
     }
 }
