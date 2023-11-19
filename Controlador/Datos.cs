@@ -9,9 +9,9 @@ using System.Data;
 
 namespace Controlador
 {
-    internal class Datos
+    public class Datos
     {
-        string cadenaConexion = "Data Source=localHost;User ID=BD2;Password=12345";
+        string cadenaConexion = "Data Source=localhost/orcl;User ID=BD2;Password=12345";
         public int ejecutarDML(string consulta)
         {
             int filasAfectadas;
@@ -23,7 +23,7 @@ namespace Controlador
             return filasAfectadas;
         }
 
-        internal DataSet ejecutarSELECT(string consulta)
+        public DataSet ejecutarSELECT(string consulta)
         {
             DataSet ds = new DataSet();
             OracleDataAdapter adaptador = new OracleDataAdapter(consulta, cadenaConexion);

@@ -6,11 +6,32 @@ namespace Vista
         {
             InitializeComponent();
         }
-
-        private void btnTipoCliente_Click(object sender, EventArgs e)
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmTipoCliente newfrm = new FrmTipoCliente();
-            newfrm.Show();   
+            FrmTipoClienteAgregar newfrm = new FrmTipoClienteAgregar();
+            newfrm.MdiParent = this;
+            newfrm.Show();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTipoClienteEliminar newfrm = new FrmTipoClienteEliminar();
+            newfrm.MdiParent = this;
+            newfrm.Show();
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTipoClienteActualizar newfrm = new FrmTipoClienteActualizar();
+            newfrm.MdiParent = this;
+            newfrm.Show();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTipoClienteConsultar newfrm = new FrmTipoClienteConsultar();
+            newfrm.MdiParent = this;
+            newfrm.Show();
         }
     }
 }
