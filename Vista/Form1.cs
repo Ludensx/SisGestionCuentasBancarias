@@ -6,5 +6,11 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void btnTipoCliente_Click(object sender, EventArgs e)
+        {
+            FrmTipoCliente newfrm = new FrmTipoCliente();
+            newfrm.Show();   
+        }
     }
 }
