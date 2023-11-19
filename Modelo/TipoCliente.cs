@@ -16,7 +16,7 @@ namespace Modelo
         public int ingresarTipoCliente(string tipoClienteDescripcion) {
             int res;
             string cadena;
-            cadena = "insert into Tipo_Cliente(Tipo_Cliente_Descripcion) values ('"+tipoClienteDescripcion+"')";
+            cadena = "begin crudtipocliente.insertartipocliente('" + tipoClienteDescripcion+"'); end;";
             res = dt.ejecutarDML(cadena);
             return res;
         }
@@ -24,7 +24,7 @@ namespace Modelo
         public int eliminarTipoCliente(int tipoClienteid) {
             int res;
             string cadena;
-            cadena = "delete from Tipo_Cliente where Tipo_Cliente_id="+tipoClienteid;
+            cadena = "begin crudtipocliente.eliminartipocliente("+ tipoClienteid+"); end;";
             res = dt.ejecutarDML(cadena);
             return res;
         }
@@ -32,8 +32,8 @@ namespace Modelo
         public int actualizarTipoCliente(int tipoClienteid, string tipoClienteDescripcion) {
             int res;
             string cadena;
-            cadena = "update Tipo_cliente set Tipo_cliente_descripcion = '" + tipoClienteDescripcion +
-                "' where Tipo_Cliente_Id = " +tipoClienteid;
+            cadena = "begin crudtipocliente.actualizartipocliente(" + tipoClienteid+",'"+ tipoClienteDescripcion 
+                + "'); end;";
             res = dt.ejecutarDML(cadena);
             return res;
         }
