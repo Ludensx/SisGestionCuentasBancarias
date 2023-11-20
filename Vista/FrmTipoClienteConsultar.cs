@@ -26,11 +26,11 @@ namespace Vista
                 ds = tp.consultarTipoCliente(int.Parse(txtId.Text));
                 dgvConsulta.DataSource = ds;
                 dgvConsulta.DataMember = "ResultadoDatos";
-            }
+             }
              catch
              {
                 MessageBox.Show("No se Puede Realizar la Consulta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+             }
         }
 
         private void btnBuscarTodos_Click(object sender, EventArgs e)
