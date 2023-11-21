@@ -38,7 +38,7 @@ namespace Modelo
             return res;
         }
 
-        public DataSet consultarTipoClientes() { 
+        public DataSet consultarTipoClientes() { //Meter las consultas en un paquete
             DataSet ds = new DataSet();
             string consulta;
             consulta = "select * from Tipo_Cliente";

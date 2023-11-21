@@ -18,7 +18,7 @@ namespace Vista
             InitializeComponent();
         }
         TipoCliente tp = new TipoCliente();
-        private void btnAceptar_Click(object sender, EventArgs e)//adfasdadasd
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             try
             {
