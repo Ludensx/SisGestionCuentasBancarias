@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class FrmTipoCuentaAgregar
+    partial class FrmTipoCuentaActualizar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,26 +29,30 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            lbDescripcion = new Label();
+            textId = new TextBox();
+            textDescripcion = new TextBox();
+            btnAceptar = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnAceptar
             // 
-            button1.Location = new Point(78, 71);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Aceptar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnAceptar.Location = new Point(87, 108);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new Size(75, 23);
+            btnAceptar.TabIndex = 4;
+            btnAceptar.Text = "Aceptar";
+            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
-        } 
 
+        }
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private Button button1;
+        private Label lbDescripcion;
+        private TextBox textId;
+        private TextBox textDescripcion;
+        private Button btnAceptar;
     }
 }

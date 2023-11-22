@@ -36,39 +36,44 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 24);
+            label2.Location = new Point(10, 18);
             label2.Name = "label2";
-            label2.Size = new Size(94, 20);
+            label2.Size = new Size(75, 15);
             label2.TabIndex = 1;
             label2.Text = "Descripcion: ";
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(112, 21);
+            txtDescripcion.Location = new Point(98, 16);
+            txtDescripcion.Margin = new Padding(3, 2, 3, 2);
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(125, 27);
+            txtDescripcion.Size = new Size(110, 23);
             txtDescripcion.TabIndex = 3;
+            txtDescripcion.TextChanged += txtDescripcion_TextChanged;
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(142, 65);
+            btnAceptar.Location = new Point(124, 49);
+            btnAceptar.Margin = new Padding(3, 2, 3, 2);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(95, 33);
+            btnAceptar.Size = new Size(83, 25);
             btnAceptar.TabIndex = 4;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
-            // FrmTipoCliente
+            // FrmTipoClienteAgregar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(548, 399);
+            ClientSize = new Size(480, 299);
             Controls.Add(btnAceptar);
             Controls.Add(txtDescripcion);
             Controls.Add(label2);
-            Name = "FrmTipoCliente";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "FrmTipoClienteAgregar";
             Text = "FrmTipoCliente";
+            Load += FrmTipoClienteAgregar_Load;
             ResumeLayout(false);
             PerformLayout();
         }

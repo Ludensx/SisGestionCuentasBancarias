@@ -1,5 +1,4 @@
-﻿using Modelo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,22 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modelo;
 
 namespace Vista
 {
-    public partial class FrmTipoClienteConsultar : Form
+    public partial class FrmTipoCuentaConsultar : Form
     {
-        public FrmTipoClienteConsultar()
+        public FrmTipoCuentaConsultar()
         {
             InitializeComponent();
         }
-        TipoCliente tp = new TipoCliente();
-        private void btnBuscar_Click(object sender, EventArgs e)
+
+        TipoCuenta tc = new TipoCuenta();
+        private void lbId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
                 DataSet ds = new DataSet();
-                ds = tp.consultarTipoCliente(int.Parse(txtId.Text));
+                ds = tc.consultarTipoCuenta(int.Parse(txtId.Text));
                 dgvConsulta.DataSource = ds;
                 dgvConsulta.DataMember = "ResultadoDatos";
             }
@@ -33,11 +44,12 @@ namespace Vista
             }
         }
 
-        private void btnBuscarTodos_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            try{
+            try
+            {
                 DataSet ds = new DataSet();
-                ds = tp.consultarTipoClientes();
+                ds = tc.consultarTipoCuentas();
                 dgvConsulta.DataSource = ds;
                 dgvConsulta.DataMember = "ResultadoDatos";
             }
@@ -45,8 +57,16 @@ namespace Vista
             {
                 MessageBox.Show("No se Puede Realizar la Consulta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
+        private void FrmTipoCuentaConsultar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

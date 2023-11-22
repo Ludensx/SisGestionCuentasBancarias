@@ -30,5 +30,20 @@ namespace Vista
                 MessageBox.Show("Tipo Cliente No Actualizado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmTipoClienteActualizar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

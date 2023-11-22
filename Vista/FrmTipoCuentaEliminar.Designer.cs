@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class FrmTipoClienteEliminar
+    partial class FrmTipoCuentaEliminar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,59 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            txtId = new TextBox();
+            lbID = new Label();
+            txtID = new TextBox();
             btnAceptar = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lbID
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(10, 7);
-            label1.Name = "label1";
-            label1.Size = new Size(23, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Id: ";
+            lbID.AutoSize = true;
+            lbID.Location = new Point(28, 29);
+            lbID.Name = "lbID";
+            lbID.Size = new Size(20, 15);
+            lbID.TabIndex = 0;
+            lbID.Text = "Id:";
+            lbID.Click += lbID_Click;
             // 
-            // txtId
+            // txtID
             // 
-            txtId.Location = new Point(41, 9);
-            txtId.Margin = new Padding(3, 2, 3, 2);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(110, 23);
-            txtId.TabIndex = 1;
+            txtID.Location = new Point(54, 26);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(100, 23);
+            txtID.TabIndex = 1;
+            txtID.TextChanged += txtID_TextChanged;
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(68, 61);
-            btnAceptar.Margin = new Padding(3, 2, 3, 2);
+            btnAceptar.Location = new Point(42, 64);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(82, 22);
+            btnAceptar.Size = new Size(75, 23);
             btnAceptar.TabIndex = 2;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
-            // FrmTipoClienteEliminar
+            // FrmTipoCuentaEliminar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(218, 142);
+            ClientSize = new Size(342, 213);
             Controls.Add(btnAceptar);
-            Controls.Add(txtId);
-            Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "FrmTipoClienteEliminar";
-            Text = "FrmTipoClienteEliminar";
-            Load += FrmTipoClienteEliminar_Load;
+            Controls.Add(txtID);
+            Controls.Add(lbID);
+            Name = "FrmTipoCuentaEliminar";
+            Text = "Eliminar un tipo de cuenta";
+            Load += FrmTipoCuentaEliminar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private TextBox txtId;
+        private Label lbID;
+        private TextBox txtID;
         private Button btnAceptar;
     }
 }

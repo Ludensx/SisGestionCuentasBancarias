@@ -24,7 +24,7 @@ namespace Vista
         {
             try
             {
-                //tc.ingresarTipoCuenta(textBox1.Text);
+                tc.ingresarTipoCuenta(textBox1.Text);
                 MessageBox.Show("Tipo Cuenta Registrado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -33,19 +33,5 @@ namespace Vista
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmTipoCuentaAgregar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

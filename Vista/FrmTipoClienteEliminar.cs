@@ -20,13 +20,20 @@ namespace Vista
         TipoCliente tp = new TipoCliente();
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 tp.eliminarTipoCliente(int.Parse(txtId.Text));
                 MessageBox.Show("Tipo Cliente Eliminado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch{
+            catch
+            {
                 MessageBox.Show("Tipo Cliente No Eliminado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FrmTipoClienteEliminar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

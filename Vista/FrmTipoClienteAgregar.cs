@@ -21,14 +21,31 @@ namespace Vista
         TipoCliente tp = new TipoCliente();
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 tp.ingresarTipoCliente(txtDescripcion.Text);
                 MessageBox.Show("Tipo Cliente Registrado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }catch
+            }
+            catch
             {
                 MessageBox.Show("Tipo Cliente No Registrado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
+        }
+
+        private void FrmTipoClienteAgregar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

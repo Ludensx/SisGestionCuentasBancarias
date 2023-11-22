@@ -42,17 +42,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(13, 12);
             label1.Name = "label1";
-            label1.Size = new Size(29, 20);
+            label1.Size = new Size(23, 15);
             label1.TabIndex = 0;
             label1.Text = "Id: ";
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(218, 5);
+            btnBuscar.Location = new Point(191, 11);
+            btnBuscar.Margin = new Padding(3, 2, 3, 2);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(94, 29);
+            btnBuscar.Size = new Size(82, 22);
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -60,16 +61,19 @@
             // 
             // txtId
             // 
-            txtId.Location = new Point(60, 6);
+            txtId.Location = new Point(52, 10);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.Name = "txtId";
-            txtId.Size = new Size(125, 27);
+            txtId.Size = new Size(110, 23);
             txtId.TabIndex = 2;
+            //txtId.TextChanged += txtId_TextChanged;
             // 
             // btnBuscarTodos
             // 
-            btnBuscarTodos.Location = new Point(330, 5);
+            btnBuscarTodos.Location = new Point(284, 12);
+            btnBuscarTodos.Margin = new Padding(3, 2, 3, 2);
             btnBuscarTodos.Name = "btnBuscarTodos";
-            btnBuscarTodos.Size = new Size(131, 29);
+            btnBuscarTodos.Size = new Size(115, 22);
             btnBuscarTodos.TabIndex = 3;
             btnBuscarTodos.Text = "Buscar Todos";
             btnBuscarTodos.UseVisualStyleBackColor = true;
@@ -78,30 +82,33 @@
             // tipoClienteBindingSource
             // 
             tipoClienteBindingSource.DataSource = typeof(Modelo.TipoCliente);
-           // tipoClienteBindingSource.CurrentChanged += tipoClienteBindingSource_CurrentChanged;
             // 
             // dgvConsulta
             // 
             dgvConsulta.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvConsulta.Location = new Point(12, 90);
+            dgvConsulta.Location = new Point(10, 68);
+            dgvConsulta.Margin = new Padding(3, 2, 3, 2);
             dgvConsulta.Name = "dgvConsulta";
             dgvConsulta.RowHeadersWidth = 51;
             dgvConsulta.RowTemplate.Height = 29;
-            dgvConsulta.Size = new Size(449, 316);
+            dgvConsulta.Size = new Size(393, 237);
             dgvConsulta.TabIndex = 4;
+            //dgvConsulta.CellContentClick += dgvConsulta_CellContentClick;
             // 
             // FrmTipoClienteConsultar
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(473, 418);
+            ClientSize = new Size(414, 314);
             Controls.Add(dgvConsulta);
             Controls.Add(btnBuscarTodos);
             Controls.Add(txtId);
             Controls.Add(btnBuscar);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FrmTipoClienteConsultar";
             Text = "FrmTipoClienteConsultar";
+            //Load += FrmTipoClienteConsultar_Load;
             ((System.ComponentModel.ISupportInitialize)tipoClienteBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvConsulta).EndInit();
             ResumeLayout(false);

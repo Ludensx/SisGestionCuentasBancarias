@@ -11,7 +11,7 @@ namespace Controlador
 {
     public class Datos
     {
-        string cadenaConexion = "Data Source=localhost/orcl;User ID=BD2;Password=12345";
+        string cadenaConexion = "Data Source=localhost;User ID=proyectobd;Password=proyecto";
         public int ejecutarDML(string consulta)
         {
             int filasAfectadas;
