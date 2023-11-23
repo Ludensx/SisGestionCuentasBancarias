@@ -30,10 +30,5 @@ namespace Vista
                 MessageBox.Show("Tipo Cliente No Eliminado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void FrmTipoClienteEliminar_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

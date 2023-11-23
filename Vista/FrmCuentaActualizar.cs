@@ -1,5 +1,4 @@
-﻿using Modelo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,21 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modelo;
 
 namespace Vista
 {
-    public partial class FrmTipoClienteActualizar : Form
+    public partial class FrmCuentaActualizar : Form
     {
-        public FrmTipoClienteActualizar()
+        public FrmCuentaActualizar()
         {
             InitializeComponent();
         }
-        TipoCliente tp = new TipoCliente();
+
+        Cuenta c = new Cuenta();
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             try
             {
-                tp.actualizarTipoCliente(int.Parse(txtId.Text), txtDescripcion.Text);
+                c.actualizarCuenta(int.Parse(txtidcuenta.Text),int.Parse(txtsaldo.Text), int.Parse(txtIdtipoCuenta.Text), int.Parse(txtIdcliente.Text));
                 MessageBox.Show("Tipo Cliente Actualizado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -30,6 +31,5 @@ namespace Vista
                 MessageBox.Show("Tipo Cliente No Actualizado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

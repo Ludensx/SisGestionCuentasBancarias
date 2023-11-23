@@ -55,21 +55,17 @@
             // 
             // txtId
             // 
-            txtId.Location = new Point(107, 4);
-            txtId.Margin = new Padding(3, 2, 3, 2);
+            txtId.Location = new Point(116, 7);
             txtId.Name = "txtId";
-            txtId.Size = new Size(110, 23);
-            txtId.TabIndex = 2;
-            txtId.TextChanged += txtId_TextChanged;
+            txtId.Size = new Size(100, 23);
+            txtId.TabIndex = 6;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(107, 44);
-            txtDescripcion.Margin = new Padding(3, 2, 3, 2);
+            txtDescripcion.Location = new Point(116, 46);
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(110, 23);
-            txtDescripcion.TabIndex = 3;
-            txtDescripcion.TextChanged += txtDescripcion_TextChanged;
+            txtDescripcion.Size = new Size(100, 23);
+            txtDescripcion.TabIndex = 5;
             // 
             // btnAceptar
             // 
@@ -95,7 +91,6 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "FrmTipoClienteActualizar";
             Text = "FrmTipoClienteActualizar";
-            Load += FrmTipoClienteActualizar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
