@@ -20,5 +20,13 @@ namespace Modelo
             this.clienteNombre= clienteNombre;
             this.clienteApellido= clienteApellido;
         }
+        public DataSet consultarDiezClientesMasAntiguos()
+        {
+            DataSet ds = new DataSet();
+            string consulta;
+            consulta = "SELECT * FROM CLIENTE ORDER BY CLIENTE_FECHANACIMIENTO FETCH FIRST 10 ROWS ONLY";
+            ds = dt.ejecutarSELECT(consulta);
+            return ds;
+        }
     }
 }
