@@ -11,7 +11,7 @@ namespace Modelo
         public Cliente() { }
 
         public int agregarCliente(string [] prms) {
-            
+            return 1;
         }
 
     }

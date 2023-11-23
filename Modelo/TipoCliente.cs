@@ -38,10 +38,11 @@ namespace Modelo
             return res;
         }
 
-        public DataSet consultarTipoClientes() { //Meter las consultas en un paquete
+        public DataSet consultarTipoClientes() {
             DataSet ds = new DataSet();
             string consulta;
-            consulta = "select * from Tipo_Cliente";
+            consulta = "select * from tipo_cliente where tipo_cliente_estado = 'Activo' ";
+            //consulta = "declare cur sys_refcursor; begin cur := crudtipocliente.consultartipoclientes; end;";
             ds = dt.ejecutarSELECT(consulta);
             return ds;
         }
@@ -49,7 +50,7 @@ namespace Modelo
         public DataSet consultarTipoCliente(int tipoClienteId) {
             DataSet ds = new DataSet();
             string consulta;
-            consulta = "select * from Tipo_Cliente where Tipo_Cliente_Id ="+tipoClienteId;
+            consulta = "select * from Tipo_Cliente where Tipo_Cliente_Id ="+tipoClienteId+" AND tipo_cliente_estado = 'Activo'";
             ds = dt.ejecutarSELECT(consulta);
             return ds;
         }

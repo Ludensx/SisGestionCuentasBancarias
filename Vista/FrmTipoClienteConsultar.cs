@@ -35,7 +35,7 @@ namespace Vista
 
         private void btnBuscarTodos_Click(object sender, EventArgs e)
         {
-            try{
+            /*try{
                 DataSet ds = new DataSet();
                 ds = tp.consultarTipoClientes();
                 dgvConsulta.DataSource = ds;
@@ -44,7 +44,11 @@ namespace Vista
             catch
             {
                 MessageBox.Show("No se Puede Realizar la Consulta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
+            DataSet ds = new DataSet();
+            ds = tp.consultarTipoClientes();
+            dgvConsulta.DataSource = ds;
+            dgvConsulta.DataMember = "ResultadoDatos";
 
         }
 
