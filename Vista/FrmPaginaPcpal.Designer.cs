@@ -61,6 +61,13 @@
             detallesDeCompraToolStripMenuItem = new ToolStripMenuItem();
             consultasToolStripMenuItem = new ToolStripMenuItem();
             realizarCompraToolStripMenuItem = new ToolStripMenuItem();
+            cuentasAntiguasToolStripMenuItem = new ToolStripMenuItem();
+            pagosDelMesToolStripMenuItem = new ToolStripMenuItem();
+            saldoCuentasToolStripMenuItem = new ToolStripMenuItem();
+            pagosPorFechasToolStripMenuItem = new ToolStripMenuItem();
+            comprasPorClienteToolStripMenuItem = new ToolStripMenuItem();
+            pagosRecientesToolStripMenuItem = new ToolStripMenuItem();
+            pagosClientePorFechaToolStripMenuItem = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
@@ -274,6 +281,7 @@
             // 
             // consultasToolStripMenuItem
             // 
+            consultasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cuentasAntiguasToolStripMenuItem, pagosDelMesToolStripMenuItem, saldoCuentasToolStripMenuItem, pagosPorFechasToolStripMenuItem, comprasPorClienteToolStripMenuItem, pagosRecientesToolStripMenuItem, pagosClientePorFechaToolStripMenuItem });
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             consultasToolStripMenuItem.Size = new Size(86, 24);
             consultasToolStripMenuItem.Text = "Consultas";
@@ -283,6 +291,48 @@
             realizarCompraToolStripMenuItem.Name = "realizarCompraToolStripMenuItem";
             realizarCompraToolStripMenuItem.Size = new Size(133, 24);
             realizarCompraToolStripMenuItem.Text = "Realizar Compra";
+            // 
+            // cuentasAntiguasToolStripMenuItem
+            // 
+            cuentasAntiguasToolStripMenuItem.Name = "cuentasAntiguasToolStripMenuItem";
+            cuentasAntiguasToolStripMenuItem.Size = new Size(250, 26);
+            cuentasAntiguasToolStripMenuItem.Text = "Cuentas Antiguas";
+            // 
+            // pagosDelMesToolStripMenuItem
+            // 
+            pagosDelMesToolStripMenuItem.Name = "pagosDelMesToolStripMenuItem";
+            pagosDelMesToolStripMenuItem.Size = new Size(250, 26);
+            pagosDelMesToolStripMenuItem.Text = "Pagos del Mes";
+            // 
+            // saldoCuentasToolStripMenuItem
+            // 
+            saldoCuentasToolStripMenuItem.Name = "saldoCuentasToolStripMenuItem";
+            saldoCuentasToolStripMenuItem.Size = new Size(250, 26);
+            saldoCuentasToolStripMenuItem.Text = "Saldo Cuentas";
+            // 
+            // pagosPorFechasToolStripMenuItem
+            // 
+            pagosPorFechasToolStripMenuItem.Name = "pagosPorFechasToolStripMenuItem";
+            pagosPorFechasToolStripMenuItem.Size = new Size(250, 26);
+            pagosPorFechasToolStripMenuItem.Text = "Pagos Entre Fechas";
+            // 
+            // comprasPorClienteToolStripMenuItem
+            // 
+            comprasPorClienteToolStripMenuItem.Name = "comprasPorClienteToolStripMenuItem";
+            comprasPorClienteToolStripMenuItem.Size = new Size(250, 26);
+            comprasPorClienteToolStripMenuItem.Text = "Compras Por Cliente";
+            // 
+            // pagosRecientesToolStripMenuItem
+            // 
+            pagosRecientesToolStripMenuItem.Name = "pagosRecientesToolStripMenuItem";
+            pagosRecientesToolStripMenuItem.Size = new Size(250, 26);
+            pagosRecientesToolStripMenuItem.Text = "Pagos Recientes";
+            // 
+            // pagosClientePorFechaToolStripMenuItem
+            // 
+            pagosClientePorFechaToolStripMenuItem.Name = "pagosClientePorFechaToolStripMenuItem";
+            pagosClientePorFechaToolStripMenuItem.Size = new Size(250, 26);
+            pagosClientePorFechaToolStripMenuItem.Text = "Pagos Cliente por Fecha";
             // 
             // FrmPaginaPcpal
             // 
@@ -337,5 +387,12 @@
         private ToolStripMenuItem detallesDeCompraToolStripMenuItem;
         private ToolStripMenuItem consultasToolStripMenuItem;
         private ToolStripMenuItem realizarCompraToolStripMenuItem;
+        private ToolStripMenuItem cuentasAntiguasToolStripMenuItem;
+        private ToolStripMenuItem pagosDelMesToolStripMenuItem;
+        private ToolStripMenuItem saldoCuentasToolStripMenuItem;
+        private ToolStripMenuItem pagosPorFechasToolStripMenuItem;
+        private ToolStripMenuItem comprasPorClienteToolStripMenuItem;
+        private ToolStripMenuItem pagosRecientesToolStripMenuItem;
+        private ToolStripMenuItem pagosClientePorFechaToolStripMenuItem;
     }
 }
