@@ -6,6 +6,8 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        #region Tipo_Cuenta
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmTipoClienteAgregar newfrm = new FrmTipoClienteAgregar();
@@ -33,7 +35,7 @@ namespace Vista
             newfrm.MdiParent = this;
             newfrm.Show();
         }
-
+        #endregion
 
         private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
         {

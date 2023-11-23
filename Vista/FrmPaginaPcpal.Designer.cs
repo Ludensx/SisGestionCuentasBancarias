@@ -40,6 +40,11 @@
             actualizarTipoCuentaToolStripMenuItem2 = new ToolStripMenuItem();
             consultarTipoCuentaToolStripMenuItem2 = new ToolStripMenuItem();
             cuentaToolStripMenuItem = new ToolStripMenuItem();
+            cuentaToolStripMenuItem1 = new ToolStripMenuItem();
+            agregarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
+            eliminarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
+            actualizarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
+            consultarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
             consultarCuentaToolStripMenuItem2 = new ToolStripMenuItem();
             tipoCuentaToolStripMenuItem = new ToolStripMenuItem();
             agregarToolStripMenuItem1 = new ToolStripMenuItem();
@@ -47,11 +52,6 @@
             actualizarToolStripMenuItem1 = new ToolStripMenuItem();
             consultarToolStripMenuItem1 = new ToolStripMenuItem();
             agregarCuentaToolStripMenuItem2 = new ToolStripMenuItem();
-            cuentaToolStripMenuItem1 = new ToolStripMenuItem();
-            agregarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
-            eliminarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
-            actualizarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
-            consultarCuentaToolStripMenuItem3 = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,8 +61,8 @@
             menu.Items.AddRange(new ToolStripItem[] { tipoClienteToolStripMenuItem, tipoCuentaToolStripMenuItem1, cuentaToolStripMenuItem, cuentaToolStripMenuItem1 });
             menu.Location = new Point(0, 0);
             menu.Name = "menu";
-            menu.Padding = new Padding(5, 2, 0, 2);
-            menu.Size = new Size(700, 24);
+            menu.Padding = new Padding(6, 3, 0, 3);
+            menu.Size = new Size(800, 30);
             menu.TabIndex = 1;
             menu.Text = "menuStrip1";
             // 
@@ -70,34 +70,34 @@
             // 
             tipoClienteToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarToolStripMenuItem, eliminarToolStripMenuItem, actualizarToolStripMenuItem, consultarToolStripMenuItem });
             tipoClienteToolStripMenuItem.Name = "tipoClienteToolStripMenuItem";
-            tipoClienteToolStripMenuItem.Size = new Size(82, 20);
+            tipoClienteToolStripMenuItem.Size = new Size(103, 24);
             tipoClienteToolStripMenuItem.Text = "Tipo Cliente";
             // 
             // agregarToolStripMenuItem
             // 
             agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            agregarToolStripMenuItem.Size = new Size(126, 22);
+            agregarToolStripMenuItem.Size = new Size(224, 26);
             agregarToolStripMenuItem.Text = "Agregar";
             agregarToolStripMenuItem.Click += agregarToolStripMenuItem_Click;
             // 
             // eliminarToolStripMenuItem
             // 
             eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            eliminarToolStripMenuItem.Size = new Size(126, 22);
+            eliminarToolStripMenuItem.Size = new Size(224, 26);
             eliminarToolStripMenuItem.Text = "Eliminar";
             eliminarToolStripMenuItem.Click += eliminarToolStripMenuItem_Click;
             // 
             // actualizarToolStripMenuItem
             // 
             actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            actualizarToolStripMenuItem.Size = new Size(126, 22);
+            actualizarToolStripMenuItem.Size = new Size(224, 26);
             actualizarToolStripMenuItem.Text = "Actualizar";
             actualizarToolStripMenuItem.Click += actualizarToolStripMenuItem_Click;
             // 
             // consultarToolStripMenuItem
             // 
             consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            consultarToolStripMenuItem.Size = new Size(126, 22);
+            consultarToolStripMenuItem.Size = new Size(224, 26);
             consultarToolStripMenuItem.Text = "Consultar";
             consultarToolStripMenuItem.Click += consultarToolStripMenuItem_Click;
             // 
@@ -105,41 +105,76 @@
             // 
             tipoCuentaToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { agregarTipoCuentaToolStripMenuItem2, eliminarTipoCuentaToolStripMenuItem2, actualizarTipoCuentaToolStripMenuItem2, consultarTipoCuentaToolStripMenuItem2 });
             tipoCuentaToolStripMenuItem1.Name = "tipoCuentaToolStripMenuItem1";
-            tipoCuentaToolStripMenuItem1.Size = new Size(83, 20);
+            tipoCuentaToolStripMenuItem1.Size = new Size(103, 24);
             tipoCuentaToolStripMenuItem1.Text = "Tipo Cuenta";
             // 
             // agregarTipoCuentaToolStripMenuItem2
             // 
             agregarTipoCuentaToolStripMenuItem2.Name = "agregarTipoCuentaToolStripMenuItem2";
-            agregarTipoCuentaToolStripMenuItem2.Size = new Size(180, 22);
+            agregarTipoCuentaToolStripMenuItem2.Size = new Size(162, 26);
             agregarTipoCuentaToolStripMenuItem2.Text = "Agregar";
             agregarTipoCuentaToolStripMenuItem2.Click += agregarTipoCuentaToolStripMenuItem2_Click;
             // 
             // eliminarTipoCuentaToolStripMenuItem2
             // 
             eliminarTipoCuentaToolStripMenuItem2.Name = "eliminarTipoCuentaToolStripMenuItem2";
-            eliminarTipoCuentaToolStripMenuItem2.Size = new Size(180, 22);
+            eliminarTipoCuentaToolStripMenuItem2.Size = new Size(162, 26);
             eliminarTipoCuentaToolStripMenuItem2.Text = "Eliminar";
             eliminarTipoCuentaToolStripMenuItem2.Click += eliminarTipoCuentaToolStripMenuItem2_Click;
             // 
             // actualizarTipoCuentaToolStripMenuItem2
             // 
             actualizarTipoCuentaToolStripMenuItem2.Name = "actualizarTipoCuentaToolStripMenuItem2";
-            actualizarTipoCuentaToolStripMenuItem2.Size = new Size(180, 22);
+            actualizarTipoCuentaToolStripMenuItem2.Size = new Size(162, 26);
             actualizarTipoCuentaToolStripMenuItem2.Text = "Actualizar ";
             actualizarTipoCuentaToolStripMenuItem2.Click += actualizarTipoCuentaToolStripMenuItem2_Click;
             // 
             // consultarTipoCuentaToolStripMenuItem2
             // 
             consultarTipoCuentaToolStripMenuItem2.Name = "consultarTipoCuentaToolStripMenuItem2";
-            consultarTipoCuentaToolStripMenuItem2.Size = new Size(180, 22);
+            consultarTipoCuentaToolStripMenuItem2.Size = new Size(162, 26);
             consultarTipoCuentaToolStripMenuItem2.Text = "Consultar";
             consultarTipoCuentaToolStripMenuItem2.Click += consultarTipoCuentaToolStripMenuItem2_Click;
             // 
             // cuentaToolStripMenuItem
             // 
             cuentaToolStripMenuItem.Name = "cuentaToolStripMenuItem";
-            cuentaToolStripMenuItem.Size = new Size(12, 20);
+            cuentaToolStripMenuItem.Size = new Size(14, 24);
+            // 
+            // cuentaToolStripMenuItem1
+            // 
+            cuentaToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { agregarCuentaToolStripMenuItem3, eliminarCuentaToolStripMenuItem3, actualizarCuentaToolStripMenuItem3, consultarCuentaToolStripMenuItem3 });
+            cuentaToolStripMenuItem1.Name = "cuentaToolStripMenuItem1";
+            cuentaToolStripMenuItem1.Size = new Size(69, 24);
+            cuentaToolStripMenuItem1.Text = "Cuenta";
+            // 
+            // agregarCuentaToolStripMenuItem3
+            // 
+            agregarCuentaToolStripMenuItem3.Name = "agregarCuentaToolStripMenuItem3";
+            agregarCuentaToolStripMenuItem3.Size = new Size(158, 26);
+            agregarCuentaToolStripMenuItem3.Text = "Agregar";
+            agregarCuentaToolStripMenuItem3.Click += agregarCuentaToolStripMenuItem3_Click;
+            // 
+            // eliminarCuentaToolStripMenuItem3
+            // 
+            eliminarCuentaToolStripMenuItem3.Name = "eliminarCuentaToolStripMenuItem3";
+            eliminarCuentaToolStripMenuItem3.Size = new Size(158, 26);
+            eliminarCuentaToolStripMenuItem3.Text = "Eliminar";
+            eliminarCuentaToolStripMenuItem3.Click += eliminarCuentaToolStripMenuItem3_Click;
+            // 
+            // actualizarCuentaToolStripMenuItem3
+            // 
+            actualizarCuentaToolStripMenuItem3.Name = "actualizarCuentaToolStripMenuItem3";
+            actualizarCuentaToolStripMenuItem3.Size = new Size(158, 26);
+            actualizarCuentaToolStripMenuItem3.Text = "Actualizar";
+            actualizarCuentaToolStripMenuItem3.Click += actualizarCuentaToolStripMenuItem3_Click;
+            // 
+            // consultarCuentaToolStripMenuItem3
+            // 
+            consultarCuentaToolStripMenuItem3.Name = "consultarCuentaToolStripMenuItem3";
+            consultarCuentaToolStripMenuItem3.Size = new Size(158, 26);
+            consultarCuentaToolStripMenuItem3.Text = "Consultar";
+            consultarCuentaToolStripMenuItem3.Click += consultarCuentaToolStripMenuItem3_Click;
             // 
             // consultarCuentaToolStripMenuItem2
             // 
@@ -186,50 +221,14 @@
             agregarCuentaToolStripMenuItem2.Size = new Size(180, 22);
             agregarCuentaToolStripMenuItem2.Text = "Agregar";
             // 
-            // cuentaToolStripMenuItem1
-            // 
-            cuentaToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { agregarCuentaToolStripMenuItem3, eliminarCuentaToolStripMenuItem3, actualizarCuentaToolStripMenuItem3, consultarCuentaToolStripMenuItem3 });
-            cuentaToolStripMenuItem1.Name = "cuentaToolStripMenuItem1";
-            cuentaToolStripMenuItem1.Size = new Size(57, 20);
-            cuentaToolStripMenuItem1.Text = "Cuenta";
-            // 
-            // agregarCuentaToolStripMenuItem3
-            // 
-            agregarCuentaToolStripMenuItem3.Name = "agregarCuentaToolStripMenuItem3";
-            agregarCuentaToolStripMenuItem3.Size = new Size(180, 22);
-            agregarCuentaToolStripMenuItem3.Text = "Agregar";
-            agregarCuentaToolStripMenuItem3.Click += agregarCuentaToolStripMenuItem3_Click;
-            // 
-            // eliminarCuentaToolStripMenuItem3
-            // 
-            eliminarCuentaToolStripMenuItem3.Name = "eliminarCuentaToolStripMenuItem3";
-            eliminarCuentaToolStripMenuItem3.Size = new Size(180, 22);
-            eliminarCuentaToolStripMenuItem3.Text = "Eliminar";
-            eliminarCuentaToolStripMenuItem3.Click += eliminarCuentaToolStripMenuItem3_Click;
-            // 
-            // actualizarCuentaToolStripMenuItem3
-            // 
-            actualizarCuentaToolStripMenuItem3.Name = "actualizarCuentaToolStripMenuItem3";
-            actualizarCuentaToolStripMenuItem3.Size = new Size(180, 22);
-            actualizarCuentaToolStripMenuItem3.Text = "Actualizar";
-            actualizarCuentaToolStripMenuItem3.Click += actualizarCuentaToolStripMenuItem3_Click;
-            // 
-            // consultarCuentaToolStripMenuItem3
-            // 
-            consultarCuentaToolStripMenuItem3.Name = "consultarCuentaToolStripMenuItem3";
-            consultarCuentaToolStripMenuItem3.Size = new Size(180, 22);
-            consultarCuentaToolStripMenuItem3.Text = "Consultar";
-            consultarCuentaToolStripMenuItem3.Click += consultarCuentaToolStripMenuItem3_Click;
-            // 
             // FrmPaginaPcpal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 451);
             Controls.Add(menu);
             IsMdiContainer = true;
             MainMenuStrip = menu;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FrmPaginaPcpal";
             Text = "Pagina Principal";
             menu.ResumeLayout(false);
