@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="C:\Users\qwerty\Desktop\FrmPaginaPcpal.cs" Link="FrmPaginaPcpal.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Modelo\Modelo.csproj" />
   </ItemGroup>
 

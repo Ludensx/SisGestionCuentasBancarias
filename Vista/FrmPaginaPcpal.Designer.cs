@@ -68,6 +68,14 @@
             comprasPorClienteToolStripMenuItem = new ToolStripMenuItem();
             pagosRecientesToolStripMenuItem = new ToolStripMenuItem();
             pagosClientePorFechaToolStripMenuItem = new ToolStripMenuItem();
+            agregarToolStripMenuItem2 = new ToolStripMenuItem();
+            eliminarToolStripMenuItem2 = new ToolStripMenuItem();
+            actualizarToolStripMenuItem2 = new ToolStripMenuItem();
+            consultarToolStripMenuItem2 = new ToolStripMenuItem();
+            agregarToolStripMenuItem3 = new ToolStripMenuItem();
+            eliminarToolStripMenuItem3 = new ToolStripMenuItem();
+            actualizarToolStripMenuItem3 = new ToolStripMenuItem();
+            consultarToolStripMenuItem3 = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
@@ -251,6 +259,7 @@
             // 
             // proveedorToolStripMenuItem
             // 
+            proveedorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarToolStripMenuItem2, eliminarToolStripMenuItem2, actualizarToolStripMenuItem2, consultarToolStripMenuItem2 });
             proveedorToolStripMenuItem.Name = "proveedorToolStripMenuItem";
             proveedorToolStripMenuItem.Size = new Size(91, 24);
             proveedorToolStripMenuItem.Text = "Proveedor";
@@ -275,6 +284,7 @@
             // 
             // detallesDeCompraToolStripMenuItem
             // 
+            detallesDeCompraToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { agregarToolStripMenuItem3, eliminarToolStripMenuItem3, actualizarToolStripMenuItem3, consultarToolStripMenuItem3 });
             detallesDeCompraToolStripMenuItem.Name = "detallesDeCompraToolStripMenuItem";
             detallesDeCompraToolStripMenuItem.Size = new Size(155, 24);
             detallesDeCompraToolStripMenuItem.Text = "Detalles de Compra";
@@ -333,6 +343,54 @@
             pagosClientePorFechaToolStripMenuItem.Name = "pagosClientePorFechaToolStripMenuItem";
             pagosClientePorFechaToolStripMenuItem.Size = new Size(250, 26);
             pagosClientePorFechaToolStripMenuItem.Text = "Pagos Cliente por Fecha";
+            // 
+            // agregarToolStripMenuItem2
+            // 
+            agregarToolStripMenuItem2.Name = "agregarToolStripMenuItem2";
+            agregarToolStripMenuItem2.Size = new Size(224, 26);
+            agregarToolStripMenuItem2.Text = "Agregar";
+            // 
+            // eliminarToolStripMenuItem2
+            // 
+            eliminarToolStripMenuItem2.Name = "eliminarToolStripMenuItem2";
+            eliminarToolStripMenuItem2.Size = new Size(224, 26);
+            eliminarToolStripMenuItem2.Text = "Eliminar";
+            // 
+            // actualizarToolStripMenuItem2
+            // 
+            actualizarToolStripMenuItem2.Name = "actualizarToolStripMenuItem2";
+            actualizarToolStripMenuItem2.Size = new Size(224, 26);
+            actualizarToolStripMenuItem2.Text = "Actualizar";
+            // 
+            // consultarToolStripMenuItem2
+            // 
+            consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
+            consultarToolStripMenuItem2.Size = new Size(224, 26);
+            consultarToolStripMenuItem2.Text = "Consultar";
+            // 
+            // agregarToolStripMenuItem3
+            // 
+            agregarToolStripMenuItem3.Name = "agregarToolStripMenuItem3";
+            agregarToolStripMenuItem3.Size = new Size(224, 26);
+            agregarToolStripMenuItem3.Text = "Agregar";
+            // 
+            // eliminarToolStripMenuItem3
+            // 
+            eliminarToolStripMenuItem3.Name = "eliminarToolStripMenuItem3";
+            eliminarToolStripMenuItem3.Size = new Size(224, 26);
+            eliminarToolStripMenuItem3.Text = "Eliminar";
+            // 
+            // actualizarToolStripMenuItem3
+            // 
+            actualizarToolStripMenuItem3.Name = "actualizarToolStripMenuItem3";
+            actualizarToolStripMenuItem3.Size = new Size(224, 26);
+            actualizarToolStripMenuItem3.Text = "Actualizar";
+            // 
+            // consultarToolStripMenuItem3
+            // 
+            consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
+            consultarToolStripMenuItem3.Size = new Size(224, 26);
+            consultarToolStripMenuItem3.Text = "Consultar";
             // 
             // FrmPaginaPcpal
             // 
@@ -394,5 +452,10 @@
         private ToolStripMenuItem comprasPorClienteToolStripMenuItem;
         private ToolStripMenuItem pagosRecientesToolStripMenuItem;
         private ToolStripMenuItem pagosClientePorFechaToolStripMenuItem;
+        private ToolStripMenuItem consultarToolStripMenuItem2;
+        private ToolStripMenuItem agregarToolStripMenuItem3;
+        private ToolStripMenuItem eliminarToolStripMenuItem3;
+        private ToolStripMenuItem actualizarToolStripMenuItem3;
+        private ToolStripMenuItem consultarToolStripMenuItem3;
     }
 }
