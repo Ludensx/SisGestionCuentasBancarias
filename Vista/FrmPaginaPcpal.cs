@@ -104,17 +104,20 @@ namespace Vista
 
         private void eliminarCuentaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            FrmCuentaEliminar newfrm = new FrmCuentaEliminar();
+            newfrm.MdiParent = this;
+            newfrm.Show();
         }
 
         private void actualizarCuentaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            FrmCuentaActualizar newfrm = new FrmCuentaActualizar();
+            newfrm.MdiParent = this;
+            newfrm.Show();
         }
 
         private void consultarCuentaToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

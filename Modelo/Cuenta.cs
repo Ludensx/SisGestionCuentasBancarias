@@ -22,7 +22,7 @@ namespace Modelo
             return res;
         }
 
-        public int eliminarTipoCuenta(int tipoCuenta)
+        public int eliminarCuenta(int tipoCuenta)
         {
             int res;
             string cadena;
@@ -50,7 +50,7 @@ namespace Modelo
             return ds;
         }
 
-        public DataSet consultarTipoCliente(int CuentaId)
+        public DataSet consultarCuenta(int CuentaId)
         {
             DataSet ds = new DataSet();
             string consulta;
